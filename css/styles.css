@@ -319,20 +319,28 @@ li {
 }
 .sosial-list {
   display: flex;
-  border-radius: 50%;
+
   width: 44px;
   height: 44px;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary--white-color);
 }
-
-.sosial-list:hover,
-.sosial-list:focus {
+.sosial-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--primary--white-color);
+  width: 44px;
+  height: 44px;
+  outline: none;
+}
+.sosial-link:hover,
+.sosial-link:focus {
   background-color: var(--accent-color);
 }
-.sosial-list:hover .svg,
-.sosial-list:focus .svg {
+.sosial-link:hover .svg,
+.sosial-link:focus .svg {
   fill: #ffffff;
 }
 .svg {
@@ -356,6 +364,7 @@ li {
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  outline: none;
 }
 .customer-link:hover,
 .customer-link:focus {
@@ -365,6 +374,57 @@ li {
 .customer-link:focus .svg {
   fill: var(--accent-color);
 }
+/* footer */
+.section-flex {
+  display: flex;
+  align-items: baseline;
+}
+.footer-contacts {
+  margin-left: 70px;
+}
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--primary--white-color);
+  margin-bottom: 20px;
+}
+.socials-items-footer {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.sosial-list-footer {
+  display: flex;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
+.sosial-footer-link {
+  display: flex;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+
+.sosial-footer-link:hover,
+.sosial-footer-link:focus {
+  background: var(--accent-color);
+}
+.svg-footer {
+  fill: var(--primary--white-color);
+}
+.socials-items-footer .sosial-list-footer:not(:last-child) {
+  margin-right: 10px;
+}
+
 /* ________________________________________ */
 /* Page-portfolio */
 /* Filter list */
